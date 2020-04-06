@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>_mdecimal</Title>
+            <Author>brunomoura.dev</Author>
+            <Description>Create public method decimal named</Description>
+            <Shortcut>_mdecimal</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[public double $Name$($params$) {
+                    $content$
+                }]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>Name</ID>
+                    <ToolTip>Enter the name of the method.</ToolTip>
+                    <Default>Method</Default>
+                </Literal>
+                <Literal>
+                    <ID>content</ID>
+                    <ToolTip>Content of the method.</ToolTip>
+                    <Default>throw new NotImplementedException();</Default>
+                </Literal>
+                <Literal>
+                    <ID>params</ID>
+                    <ToolTip>Method parameters.</ToolTip>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

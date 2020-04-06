@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>_mp</Title>
+            <Author>brunomoura.dev</Author>
+            <Description>Create private method with type to define.</Description>
+            <Shortcut>_mp</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[private $type$ $Name$($params$) {
+                    $content$
+                }]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>type</ID>
+                    <ToolTip>Enter method type.</ToolTip>
+                    <Default>void</Default>
+                </Literal>
+                <Literal>
+                    <ID>Name</ID>
+                    <ToolTip>Enter the name of the method.</ToolTip>
+                    <Default>Method</Default>
+                </Literal>
+                <Literal>
+                    <ID>content</ID>
+                    <ToolTip>Content of the method.</ToolTip>
+                    <Default>throw new NotImplementedException();</Default>
+                </Literal>
+                <Literal>
+                    <ID>params</ID>
+                    <ToolTip>Method parameters.</ToolTip>
+                    <Default></Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
