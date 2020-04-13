@@ -2,18 +2,23 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>_mdecimal</Title>
+            <Title>_mien</Title>
             <Author>brunomoura.dev</Author>
-            <Description>Create public method decimal named</Description>
-            <Shortcut>_mdecimal</Shortcut>
+            <Description>Create public method IEnumerable</Description>
+            <Shortcut>_mien</Shortcut>
         </Header>
         <Snippet>
             <Code Language="CSharp">
-                <![CDATA[public decimal $Name$($params$) {
+                <![CDATA[public IEnumerable<$typeEnum$> $Name$($params$) {
                     $content$
                 }]]>
             </Code>
             <Declarations>
+                <Literal>
+                    <ID>typeEnum</ID>
+                    <ToolTip>Type IEnumerable</ToolTip>
+                    <Default>object</Default>
+                </Literal>
                 <Literal>
                     <ID>Name</ID>
                     <ToolTip>Enter the name of the method.</ToolTip>
@@ -30,6 +35,11 @@
                     <Default></Default>
                 </Literal>
             </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System.Collections.Generic</Namespace>
+                </Import>
+            </Imports>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>

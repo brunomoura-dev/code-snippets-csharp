@@ -2,18 +2,28 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>_mdecimal</Title>
+            <Title>_mdic</Title>
             <Author>brunomoura.dev</Author>
-            <Description>Create public method decimal named</Description>
-            <Shortcut>_mdecimal</Shortcut>
+            <Description>Create public method IDictionary</Description>
+            <Shortcut>_mdic</Shortcut>
         </Header>
         <Snippet>
             <Code Language="CSharp">
-                <![CDATA[public decimal $Name$($params$) {
+                <![CDATA[public IDictionary<$k$, $v$> $Name$($params$) {
                     $content$
                 }]]>
             </Code>
             <Declarations>
+                <Literal>
+                    <ID>k</ID>
+                    <ToolTip>Type Key</ToolTip>
+                    <Default>object</Default>
+                </Literal>
+                <Literal>
+                    <ID>v</ID>
+                    <ToolTip>Type Value</ToolTip>
+                    <Default>object</Default>
+                </Literal>
                 <Literal>
                     <ID>Name</ID>
                     <ToolTip>Enter the name of the method.</ToolTip>
@@ -30,6 +40,11 @@
                     <Default></Default>
                 </Literal>
             </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>System.Collections.Generic</Namespace>
+                </Import>
+            </Imports>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>
